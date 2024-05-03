@@ -1,5 +1,5 @@
 [guests]
-isu-app
+oci-private-isu-webapp
 
 [bench]
-isu-bench
+oci-private-isu-bench
