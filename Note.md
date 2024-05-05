@@ -34,10 +34,6 @@ slow_query_log_file     = /var/log/mysql/mysql-slow.log
 long_query_time = 0
 ```
 
-```shell
-sudo cat /var/log/mysql/mysql-slow.log | mysqldumpslow -s t
-```
-
 ### What I did.
 
 1. `mkdir ~/private_isu/webapp/public/image`
@@ -45,4 +41,6 @@ sudo cat /var/log/mysql/mysql-slow.log | mysqldumpslow -s t
 2. nginxの設定を以下に変更
    1. `provisioning/image/files/etc/nginx/nginx.conf`
    2. `provisioning/image/files/etc/nginx/sites-available/isucon.conf`
+3. mysqlの設定を以下に変更
+   1. `provisioning/image/files/etc/mysql/mysql.conf.d/mysqld.cnf`
 3. `webapp/rust/src/main.rs`の差分を適用

@@ -157,4 +157,5 @@ Cargo.lock
 # End of https://www.toptal.com/developers/gitignore/api/rust
 
 webapp/rust
-/webapp/public/image/
+webapp/public/image/
+webapp/var/log/mysql/mysql-slow.log
